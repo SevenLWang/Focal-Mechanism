@@ -10,7 +10,7 @@ Usage: $ sh Generate_Weight.sh
 2.Synthetic Waveforms Generation  
   (1)make_syn_loc.pl(new01)  
   Generate the synthetic waveforms(lcoal seismogram) in corresponding with the distance in the weight.  
-  Usage: $ perl make_syn_loc.pl <directory of weight.dat> <velocity model file name> <depth>  
+  Usage: $ perl make_syn_loc.pl directory-of-weight.dat velocity-model-file-name depth> 
     (velocity model file is needed to be put in the current directory)  
   (2)Green_Function_Cycle.sh  
   Generate the synthetic waveforms for various distances in various depths  
