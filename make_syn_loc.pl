@@ -8,8 +8,9 @@ if ($#ARGV < 1){
 
 $ddir = $ARGV[0];
 $mod = $ARGV[1];
+$dep = $ARGV[2];
 open(WEI, "<$ddir/weight.dat") or die("cannot find the project: $ddir\n");
-$cmd = "fk.pl -M$mod -N2048/0.2 ";
+$cmd = "fk.pl -M$mod/$dep/k -N2048/0.2 ";
 foreach $sta (<WEI>){
     chomp $sta;
     @junk = split(" ", $sta);
