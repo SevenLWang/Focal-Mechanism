@@ -16,13 +16,13 @@ Usage: sh Generate_Weight.sh
   Generate the synthetic waveforms for various distances in various depths  
   Usage: sh Green_Function_Cycle.sh  
 
-3.CAP_Calculation.sh
-Preprocessing of the real waveform
-Usage: sh CAP_Calculation.sh(SAC file is needed to be put in the current directory)
+3.CAP_Calculation.sh  
+Preprocessing of the real waveform  
+Usage: sh CAP_Calculation.sh(SAC file is needed to be put in the current directory)  
 
-4.Transfer.py
-Components Rotation
-Usage: 
-cd <current directory of SAC file>
-pwd
-python Transfer.py <directory of pwd>
+4.Transfer.py  
+Components Rotation  
+Usage:   
+cd <current directory of SAC file>  
+pwd  
+python Transfer.py <directory of pwd>  
