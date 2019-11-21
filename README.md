@@ -28,6 +28,6 @@ Need: Velocity Model File
 4.Transfer.py  
   Components Rotation  
   Usage:   
-  $ cd <current directory of SAC file>  
+  $ cd 'current directory of SAC file'  
   $ pwd  
-  $ python Transfer.py <directory of pwd>  
+  $ python Transfer.py 'directory of pwd'  
