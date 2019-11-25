@@ -46,20 +46,21 @@ s=""
 #    os.system("cp input_dire/*.BHZ.M.SAC out_dire/")
 
 input_dire1=glob.glob(input_dire+"/*.BH?.M.SAC")
-for  freq in range(time):
+input_dire1.sort()
+#print(input_dire1)
+for freq in range(time):
     file_1 = input_dire1[freq*3] 
     file_2 = input_dire1[freq*3+1]
     file_3 = input_dire1[freq*3+2]
     filename = os.path.basename(file_1)
-    print(filename)
     net = filename.split(".")[6]
     sta = filename.split(".")[7]
     print(join(net+"."+sta+".r"))
-    if "BH1.M.SAC" in filename:
-        continue
-    elif "BHN.M.SAC" in filename:
+    if "BH1.M.SAC" in filename: 
+        EW = 0
+    elif "BHE.M.SAC" in filename:
         EW = 1
-    
+     
     cmd = "saclst b e cmpaz cmpinc f %s" % (file_1)
     junk, b1, e1, cmpaz1, cmpinc1 = os.popen(cmd).read().split()
     b1 = float(b1)
@@ -78,7 +79,7 @@ for  freq in range(time):
     junk, b3, e3 = os.popen(cmd).read().split()
     b3 = float(b3)
     e3 = float(e3)
-    
+#    print(file_1,file_2,file_3) 
     print(cmpaz1,cmpaz2) 
     path1 = file_1.split('/')[-1]
     path2 = file_2.split('/')[-1]
