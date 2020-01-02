@@ -35,5 +35,5 @@ Need: Velocity Model File
 5.Transfer_all.py  
   Component Rotation for special data  
   Usage:  
-  (1)Modify the data directory in the program
+  (1)Modify the data directory in the program  
   (2)$ python Transfer_all.py
