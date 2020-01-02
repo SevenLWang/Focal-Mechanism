@@ -31,3 +31,9 @@ Need: Velocity Model File
   $ cd 'current directory of SAC file'  
   $ pwd  
   $ python Transfer.py 'directory of pwd'  
+
+5.Transfer_all.py  
+  Component Rotation for special data  
+  Usage:  
+  (1)Modify the data directory in the program
+  (2)$ python Transfer_all.py
